@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoológico Invisible - El santuario de las criaturas fantásticas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Zoológico Invisible</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo de criaturas</a></li>
+                <li><a href="#criadero">Tu criadero</a></li>
+                <li><a href="#creador">Creador de criaturas</a></li>
+                <li><a href="#blog">Blog fantástico</a></li>
+                <li><a href="#tienda">Tienda digital</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h1>Bienvenido al Zoológico Invisible</h1>
+                <p class="subtitle">El lugar donde las criaturas fantásticas encuentran su hogar.</p>
+                <div class="featured-creature" data-creature-id="silfo-luminiscente">
+                    <h2>Criatura destacada del día: El Silfo Luminiscente</h2>
+                    <p>Conoce al Silfo, un ser etéreo que ilumina los bosques con su polen mágico. Se alimenta de luz de luna y trae buena suerte a quienes lo protegen.</p>
+                    <button class="cta-button adopt-button">Adóptala ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalogo">
+            <h2>Catálogo de criaturas</h2>
+            <div class="creature-gallery">
+                <div class="creature-card" data-creature-id="dragon-esmeralda">
+                    <img src="https://via.placeholder.com/300x200.png?text=Dragón+Esmeralda" alt="Dragón Esmeralda">
+                    <h3>Dragón Esmeralda</h3>
+                    <p><strong>Historia:</strong> Guardián de las joyas de la tierra. Nace de un cristal de roca y es pacífico. Se dice que sus escamas brillan como mil esmeraldas.</p>
+                    <p><strong>Poderes:</strong> Control de la geología, aliento de vapor y telepatía con rocas.</p>
+                    <p><strong>Cuidados:</strong> Requiere un espacio abierto y minerales frescos. Adora las cuevas húmedas y frías.</p>
+                    <p class="rarity">Rareza: <strong>Épica</strong></p>
+                    <button class="cta-button adopt-button">Adoptar</button>
+                </div>
+                <div class="creature-card" data-creature-id="hada-rociada">
+                    <img src="https://via.placeholder.com/300x200.png?text=Hada+Rociada" alt="Hada Rociada">
+                    <h3>Hada Rociada</h3>
+                    <p><strong>Historia:</strong> Pequeñas hadas que viven en las gotas de rocío de la mañana. Su presencia asegura una cosecha abundante.</p>
+                    <p><strong>Poderes:</strong> Manipulación de la humedad y crecimiento acelerado de plantas.</p>
+                    <p><strong>Cuidados:</strong> Necesitan un jardín pequeño con flores y acceso a agua limpia.</p>
+                    <p class="rarity">Rareza: <strong>Común</strong></p>
+                    <button class="cta-button adopt-button">Adoptar</button>
+                </div>
+                <div class="creature-card" data-creature-id="grifo-celeste">
+                    <img src="https://via.placeholder.com/300x200.png?text=Grifo+Celeste" alt="Grifo Celeste">
+                    <h3>Grifo Celeste</h3>
+                    <p><strong>Historia:</strong> Criaturas majestuosas que se forman a partir de las nubes del atardecer. Son símbolo de honor y valentía.</p>
+                    <p><strong>Poderes:</strong> Vuelo silencioso, control de los vientos y creación de ilusiones.</p>
+                    <p><strong>Cuidados:</strong> Requieren grandes cielos abiertos y aire puro para sobrevivir.</p>
+                    <p class="rarity">Rareza: <strong>Legendaria</strong></p>
+                    <button class="cta-button adopt-button">Adoptar</button>
+                </div>
+                <div class="creature-card" data-creature-id="golem-musgo">
+                    <img src="https://via.placeholder.com/300x200.png?text=Golem+de+Musgo" alt="Golem de Musgo">
+                    <h3>Golem de Musgo</h3>
+                    <p><strong>Historia:</strong> Un ser pacífico hecho de tierra y musgo, que protege los bosques antiguos. Son lentos, pero su fuerza es incomparable.</p>
+                    <p><strong>Poderes:</strong> Regeneración de flora, mimetismo con el entorno y resistencia a ataques físicos.</p>
+                    <p><strong>Cuidados:</strong> Deben vivir en un ambiente forestal con mucha sombra y humedad.</p>
+                    <p class="rarity">Rareza: <strong>Rara</strong></p>
+                    <button class="cta-button adopt-button">Adoptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="criadero" class="dark-section">
+            <h2>Tu criadero</h2>
+            <p><strong>(Área para usuarios)</strong></p>
+            <div class="user-profile">
+                <div class="user-creatures">
+                    <h3>Tus criaturas adoptadas</h3>
+                    <div id="adopted-creatures-container">
+                        <p class="no-creatures">Aún no has adoptado ninguna criatura. ¡Explora nuestro catálogo para encontrar a tu compañera invisible!</p>
+                    </div>
+                </div>
+                <div class="user-achievements">
+                    <h3>Logros desbloqueados</h3>
+                    <ul>
+                        <li><span class="achievement-icon">🏆</span> Primer guardián: Adopta tu primera criatura.</li>
+                        <li><span class="achievement-icon">🌿</span> Nido natural: Cuida a un Silfo Luminiscente durante un mes.</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="creador">
+            <h2>Creador de criaturas (Herramienta IA)</h2>
+            <p>¡Desata tu imaginación! Usa nuestra IA para crear una criatura única.</p>
+            <div class="ai-tool-form">
+                <label for="ai-prompt">Describe tu criatura:</label>
+                <textarea id="ai-prompt" placeholder="Ej: un zorro con alas de mariposa, cola de cometa y que canta canciones de cuna." rows="4"></textarea>
+                <button class="cta-button">Generar criatura</button>
+            </div>
+            <div class="ai-result">
+                </div>
+        </section>
+
+        <section id="blog" class="dark-section">
+            <h2>Blog fantástico</h2>
+            <div class="blog-posts">
+                <article class="blog-card">
+                    <h3>Las leyendas del Bosque Sombrío</h3>
+                    <p>Adéntrate en las historias olvidadas de los seres que habitan en la oscuridad... <a href="#">Leer más</a></p>
+                </article>
+                <article class="blog-card">
+                    <h3>Guía básica para cuidar a tu Hada del Rocío</h3>
+                    <p>Descubre los secretos para mantener a tu hada feliz y saludable en casa... <a href="#">Leer más</a></p>
+                </article>
+                </div>
+            <div class="ad-container">
+                <p>[Espacio para publicidad de Google AdSense]</p>
+            </div>
+        </section>
+
+        <section id="tienda">
+            <h2>Tienda digital</h2>
+            <div class="shop-items">
+                <div class="shop-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Fondo+Místico" alt="Fondo Místico">
+                    <h3>Fondo Místico</h3>
+                    <p>Decora tu perfil con un paisaje de ensueño.</p>
+                    <span class="price">$150 MXN</span>
+                </div>
+                <div class="shop-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Paquete+Stickers" alt="Paquete de Stickers">
+                    <h3>Stickers exclusivos</h3>
+                    <p>Paquete de pegatinas digitales de tus criaturas favoritas.</p>
+                    <span class="price">$200 MXN</span>
+                </div>
+                <div class="shop-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Ficha+Premium" alt="Ficha Premium">
+                    <h3>Fichas premium</h3>
+                    <p>Acceso a fichas con detalles secretos de las criaturas raras.</p>
+                    <span class="price">$250 MXN</span>
+                </div>
+                <div class="shop-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Acceso+Legendario" alt="Acceso Legendario">
+                    <h3>Acceso a criaturas legendarias</h3>
+                    <p>Desbloquea una criatura de rareza "Legendaria" para tu colección.</p>
+                    <span class="price">$500 MXN</span>
+                </div>
+            </div>
+            <div class="monetization-area">
+                <h3>Formas de monetización</h3>
+                <ul>
+                    <li><strong>Contenido exclusivo:</strong> Criaturas raras solo para suscriptores.</li>
+                    <li><strong>Coleccionables digitales:</strong> Stickers, fondos, insignias.</li>
+                    <li><strong>Publicidad:</strong> Integración con Google AdSense en el blog.</li>
+                </ul>
+                <div class="donations">
+                    <p>¿Te gusta lo que hacemos? Apóyanos para seguir creando.</p>
+                    <button class="cta-button">☕ Buy Me a Coffee</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zoológico Invisible. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
